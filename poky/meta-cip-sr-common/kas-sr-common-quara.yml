@@ -58,10 +58,10 @@ local_conf_header:
     # Install zimage, dtb and kernel modules
     #
     IMAGE_INSTALL_append += "kernel-devicetree kernel-image-zimage kernel-modules"
-    IMAGE_INSTALL_append += "firmware-imx-sdma-imx6q"
+    IMAGE_INSTALL_append += "firmware-wireless-wilink8 firmware-imx-sdma-imx6q"
 
     # Add additional packages
-    IMAGE_INSTALL_append += "openssh mmc-utils solidsense-scripts sudo"
+    IMAGE_INSTALL_append += "openssh git mmc-utils solidsense-scripts sudo"
     IMAGE_INSTALL_append += "docker python3-docker-compose u-boot-fw-utils util-linux"
     IMAGE_INSTALL_append += "init-ifupdown ifupdown dhcp-client"
     IMAGE_INSTALL_append += "tzdata"
@@ -69,7 +69,12 @@ local_conf_header:
     # Temporary additional packages
     IMAGE_INSTALL_append += "ppp wpa-supplicant wireless-regdb iw hostapd bluez5 bluez5-noinst-tools"
     IMAGE_INSTALL_append += "dhcp-server bind"
-    IMAGE_INSTALL_append += "wireless-tools openvpn openssl-bin"
+    IMAGE_INSTALL_append += "kura wireless-tools cronie openvpn openssl-bin"
+    #     Debug
+    # IMAGE_INSTALL_append += "gdb strace tcpdump"
+    #     Java
+    PREFERRED_PROVIDER_virtual/java-native = "cacao-native"
+    PREFERRED_PROVIDER_virtual/java-initial-native = "cacao-initial-native"
 
     # Mender
     INHERIT += "mender-full"
@@ -80,9 +85,4 @@ local_conf_header:
     MENDER_ARTIFACT_EXTRA_ARGS += "--no-checksum-provide"
 
     # Preferred applications
-    PREFERRED_VERSION_python3-grpcio = "1.23.0"
-    PREFERRED_VERSION_python3-protobuf = "3.10.0"
-    PREFERRED_VERSION_python3-protobuf-native = "3.10.0"
-    PREFERRED_VERSION_python3-pyyaml = "5.1.1"
-    PREFERRED_VERSION_protobuf = "3.10.0"
-    PREFERRED_VERSION_protobuf-native = "3.10.0"
+    PREFERRED_VERSION_kura = "4.0.0"
