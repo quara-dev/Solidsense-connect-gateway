@@ -17,7 +17,7 @@ repos:
     meta-cip-sr-common:
         path: meta-cip-sr-common/
     meta-debian:
-        url: "https://github.com/meta-debian/meta-debian.git"
+        url: "https://github.com/quara-dev/meta-debian.git"
         refspec: warrior
         patches:
             0001:
