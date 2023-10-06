@@ -6,7 +6,7 @@ LIC_FILES_CHKSUM = " \
 "
 
 SRC_URI = " \
-    git://git@github.com/SolidRun/SolidSense-BLE.git;protocol=ssh;branch=master \
+    git://git@github.com/quara-dev/SolidSense-BLE.git;protocol=ssh;branch=feat/bluez_5_66 \
 "
 SRCREV = "3fdd0cdd61d9f9cf4359be3407372702f46f2d67"
 S = "${WORKDIR}/git"
