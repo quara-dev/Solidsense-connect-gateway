@@ -7,7 +7,7 @@ SRC_URI = " \
     git://github.com/quara-dev/imx8mn_build.git;protocol=https;branch=imx8mn \
     git://git@github.com/solidsense-connect/SolidSense-V1.git;protocol=ssh;branch=master;destsuffix=SolidSense-V1;name=SolidSense-V1 \
 "
-SRCREV = "cceef2d851fcf7530a3b66f9fd9c25f70fdae756"
+SRCREV = "4a9197cc99b04cb7e70563d6832173ea703b22f1"
 SRCREV_SolidSense-V1 = "2ca1c95ebec578d033e2e10e70030349369c49cf"
 S-V1 = "${WORKDIR}/SolidSense-V1"
 
