@@ -72,6 +72,9 @@ repos:
             0004:
                 repo: meta-cip-sr-common
                 path: patches/meta-java/0010-ca-certificates-change-to-support-openjdk-11.patch
+            0005:
+                repo: meta-cip-sr-common
+                path: patches/meta-java/0011-new-sha256sum.patch
 #   meta-java:
 #       url: "https://git.yoctoproject.org/git/meta-java"
 #       refspec: warrior
