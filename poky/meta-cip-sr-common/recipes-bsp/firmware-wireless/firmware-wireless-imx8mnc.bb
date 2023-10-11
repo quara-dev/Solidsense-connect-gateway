@@ -29,7 +29,7 @@ do_install () {
     install -d ${D}${sysconfdir}/firmware
     install -d ${D}${sysconfdir}/firmware/murata-master
     install -m 0644 ${FIRMWARE_ETC_SRC}/BCM4345C0.1MW.hcd ${D}${sysconfdir}/firmware/BCM4345C0.1MW.hcd
-    install -m 0644 ${FIRMWARE_ETC_SRC}/BCM4345C0_003.001.025.0144.0266.1MW.hcd ${D}${sysconfdir}/firmware/BCM4345C0_003.001.025.0187.0366.1MW.hcd
+    install -m 0644 ${FIRMWARE_ETC_SRC}/BCM4345C0_003.001.025.0144.0266.1MW.hcd ${D}${sysconfdir}/firmware/BCM4345C0_003.001.025.0144.0266.1MW.hcd
     install -m 0644 ${FIRMWARE_ETC_SRC}/CYW4345C0.1MW.hcd ${D}${sysconfdir}/firmware/CYW4345C0.1MW.hcd
     install -m 0644 ${FIRMWARE_ETC_SRC}/murata-master/_BCM4345C0.1MW.hcd ${D}${sysconfdir}/firmware/murata-master/_BCM4345C0.1MW.hcd
 
