@@ -17,7 +17,7 @@ repos:
     meta-cip-sr-common:
         path: meta-cip-sr-common/
     meta-debian:
-        url: "https://github.com/quara-dev/meta-debian.git"
+        url: "https://github.com/meta-debian/meta-debian.git"
         refspec: warrior
         patches:
             0001:
@@ -26,6 +26,9 @@ repos:
             0002:
                 repo: meta-cip-sr-common
                 path: patches/meta-debian/0002-use-olddefconfig-instead-of-oldnoconfig.patch
+            0002:
+                repo: meta-cip-sr-common
+                path: patches/meta-debian/0005_new_python_pkg.patch
     meta-openembedded:
         url: "https://github.com/openembedded/meta-openembedded.git"
         refspec: warrior
